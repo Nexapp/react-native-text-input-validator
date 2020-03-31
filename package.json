@@ -1,26 +1,32 @@
 {
-  "name": "@nexapp/react-native-text-input-validator",
+  "name": "@nexapp/react-native-test-utilities",
   "version": "0.0.0",
-  "description": "Utility class that allow you to validate text formats for valid emails format, non-empty text and/or text matching.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "description": "Utilities to help test react-native code with enzyme",
+  "main": "src/index.js",
+  "types": "dist/*.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
   "devDependencies": {
-    "typescript": "^2.7.2"
+    "enzyme": "3.11.0",
+    "typescript": "2.7.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nexapp/react-native-text-input-validator.git"
+    "url": "git+https://github.com/Nexapp/.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
-    "text",
-    "validation",
-    "validator",
-    "react-native"
+    "react-native",
+    "test",
+    "enzyme"
   ],
   "author": "Emilie Lessard <elessard@nexapp.ca>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@types/enzyme": "^3.10.5"
+  }
 }
